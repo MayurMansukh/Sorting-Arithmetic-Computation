@@ -4,6 +4,6 @@ read -p "Enter a:" a
 read -p "Enter b:" b
 read -p "Enter c:" c
 
-computeExpression=$(($a * $b + $c ))
+computeExpression=$(($c + $a / $b ))
 
-echo "a+b*c=$computeExpression"
+echo "c + a / b : $computeExpression"
