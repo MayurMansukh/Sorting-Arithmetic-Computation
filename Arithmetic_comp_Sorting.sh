@@ -56,6 +56,8 @@ do
     expressionForm=$( expressionPerform $counter )
     expressionResultDict[$expressionForm]=$expressionResult
 done
-
-echo "The computation expressions are ${!expressionResultDict[@]}"
-echo "The computation expressions result are ${expressionResultDict[@]}"
+echo "The computation expressions result are"
+for i in ${!expressionResultDict[@]}
+do
+    echo $i"="${expressionResultDict[$i]}
+done
