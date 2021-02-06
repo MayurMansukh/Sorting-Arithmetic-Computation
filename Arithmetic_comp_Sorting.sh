@@ -63,6 +63,6 @@ do
     expressionResultArray[((counter++))]=${expressionResultDict[$i]}
 
 done
-echo "The computation expressions result in Descending"
-sortedDesc=($(echo ${expressionResultArray[*]}| tr " " "\n" | sort -nr))
-echo ${sortedDesc[@]}
+echo "The computation expressions result in Ascending"
+sortedAsc=($(echo ${expressionResultArray[*]}| tr " " "\n" | sort -n))
+echo ${sortedAsc[@]}
